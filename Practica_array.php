@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+    $lista=array(array("Barranquilla","Cartagena"),
+                 array("Santa Marta", "Valledupar"),
+                 array("Sincelejo", "Monteria"))
+?>
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <table border=1>
+            <tr>
+                <td>Table1</td>
+                <td>Table2</td>
+            </tr>
+            <?php
+            for ($i=0;$i<count($lista);$i++){?>
+            <tr>
+                <td><?php echo $lista[$i][0]?></td>
+                <td><?php echo $lista[$i][1]?></td>
+                
+            </tr>
+            <?php }
+            ?>
     </body>
 </html>
