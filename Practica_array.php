@@ -20,7 +20,6 @@
             <tr>
                 <td><?php echo $lista[$i][0]?></td>
                 <td><?php echo $lista[$i][1]?></td>
-                
             </tr>
             <?php }
             ?>
