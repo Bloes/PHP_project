@@ -10,7 +10,7 @@
         <title></title>
     </head>
     <body>
-        <table border=1>
+        <table border=1 width=50% style="margin:0 auto;">
             <tr>
                 <td>Table1</td>
                 <td>Table2</td>

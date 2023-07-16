@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-
+<?php
+    $lista = array(array("f","h",5),
+                   array("hd",56))
+?>
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
-        <h3>Nombre Completo: </h3>
-        <?php
-        echo "Braya Jesus Lopez Espitia"
-        ?>
-        <h3>Dirección: </h3>
-        <?php
-        echo "Calle 45G#18-44"
-        ?>
-        <h3>Edad: </h3>
-        <?php
-        echo 28.5
-        ?>
-        <h3>Cabeza de Familia: </h3>
-        <?php
-        echo "si"
-        ?>
+        <table border=1 width=40% style="margin: 0 auto;">
+            <tr>
+                <th>LETRAS</th>
+                <th>NUMEROS</th>
+            </tr>
+            <?php
+            for($i=0;$i<count($lista);$i++){?>
+            <tr>
+                <th><?php echo $lista[$i][0]?></th>
+                <th><?php echo $lista[$i][1]?></th>
+            </tr>
+            <?php }
+            ?>
+            
+
     </body>
 </html>
