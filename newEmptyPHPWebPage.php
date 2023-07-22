@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <?php
-    $lista = array(array("f","h",5),
-                   array("hd",56))
+$estudiante = array(array("Lau",5));
+
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>PRACTICANDO</title>
     </head>
     <body>
-        <table border=1 width=40% style="margin: 0 auto;">
+        <table border=1 width=60% style="margin: 0 auto;" cellspacing="5">
             <tr>
-                <th>LETRAS</th>
-                <th>NUMEROS</th>
+                <th>NOMBRE</th>
+                <th>NOTA</th>
+                <th>DEF</th>
             </tr>
             <?php
-            for($i=0;$i<count($lista);$i++){?>
-            <tr>
-                <th><?php echo $lista[$i][0]?></th>
-                <th><?php echo $lista[$i][1]?></th>
-            </tr>
-            <?php }
+            foreach ($estudiante as $value) {
+                echo '<tr>';
+                echo "<td>$value[0]</td>";
+                if($value[1] > 3){
+                    echo '<td> Aprobo </td>';
+                }
+                else{
+                    echo '<td> No aprobo </td>';
+                }
+                echo "<td>$value[1]</td>";
+                echo '</tr>';
+                
+            }
             ?>
             
 
