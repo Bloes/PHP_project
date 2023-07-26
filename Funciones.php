@@ -10,7 +10,7 @@
         /* En este programa se presenta el funcionamiento de una función
          * simple, creada por el usuario
          */
-        /* Inencionalmente se escribió primero el llamado a la función antes que
+        /* Inicialmente se escribió primero el llamado a la función antes que
          * su definición con el fin de demostrar que no importa donde se haga
          * el llamado de una función, si antes o despues de si declaración
          */
